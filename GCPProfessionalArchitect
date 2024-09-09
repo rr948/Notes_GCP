@@ -116,23 +116,23 @@ Projects:
 	> Auto
 	> custom
 	
-		Default Networks:
-		--------------------
-		 - every project is provisioned with default VPC network with preset subnets and firewall rules.
-		 - Each subnet is allocated for each region with non-overlapping CIDR blocks (unique blocks for IP address range) & firewall rules that allows
-		 Ingress traffic for ICMP, RDP, SSH traffic from anywhere.
+	Default Networks:
+	--------------------
+	- every project is provisioned with default VPC network with preset subnets and firewall rules.
+	- Each subnet is allocated for each region with non-overlapping CIDR blocks (unique blocks for IP address range) & firewall rules that allows
+	  Ingress traffic for ICMP, RDP, SSH traffic from anywhere.
 		 
-		 Auto-Mode Network:
-		 ----------------------
-		 - one subnet will be created in each region.
-		 - IP addresses have a range with /20 mask that can be expanded to /16
+	Auto-Mode Network:
+	----------------------
+	- one subnet will be created in each region.
+	- IP addresses have a range with /20 mask that can be expanded to /16
 		 
 		 
-		 custom Mode
-		 ----------
-		 - No deafult subnets created
-		 - IP ranges expandable upto user specified.
-		 - conversion of Auto-mode to custom mode is possible, but other way around is not possible.
+	custom Mode
+	----------
+	- No deafult subnets created
+	- IP ranges expandable upto user specified.
+	- conversion of Auto-mode to custom mode is possible, but other way around is not possible.
 		 
  
  Routes & firewall rules
